@@ -26,7 +26,7 @@ const CollapsibleCard: React.FC<CollapsibleCardProps> = ({ initialOpenState = tr
         <Flex alignItems="center" justifyContent="space-between">
           <Heading as="h3">{title}</Heading>
           <IconButton variant="text" scale="sm" onClick={toggleOpen}>
-            {isOpen ? <ChevronUpIcon width="24px" /> : <ChevronDownIcon width="24px" />}
+            {isOpen ? <ChevronUpIcon width="44px" /> : <ChevronDownIcon width="24px" />}
           </IconButton>
         </Flex>
       </CardHeader>

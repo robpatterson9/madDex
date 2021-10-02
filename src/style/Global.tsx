@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: 'Kanit', sans-serif;
   }
-  body {
-    background-image: url({MADMain});
+  page {
+    background-image :url('./images/MAD_main.svg')
  
   }
     img {

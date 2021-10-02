@@ -9,8 +9,10 @@ import Container from './Container'
 
 const StyledPage = styled(Container)`
   min-height: calc(100vh - 64px);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  background-image :url('./images/MAD_main.svg')
+  
 
   ${({ theme }) => theme.mediaQueries.sm} {
     padding-top: 24px;
