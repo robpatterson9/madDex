@@ -3,11 +3,11 @@ import { ContextApi } from 'contexts/Localization/types'
 
 export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
   {
-    label: t('About'),
+    label: ('mad'),
     items: [
  
       {
-        label: t('MAD Store'),
+        label: t('madtoken.org'),
         href: 'https://madtoken.org/',
         isHighlighted: true,
       },
