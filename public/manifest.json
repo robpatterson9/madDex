@@ -1,8 +1,8 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "short_name": "MadDex",
+  "name": "Mad Token Dex",
+  "description": "Swap Mad for ? !",
+  "homepage_url": "https://madtoken.org",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

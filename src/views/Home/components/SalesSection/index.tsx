@@ -4,6 +4,7 @@ import { Link as RouterLink } from 'react-router-dom'
 import { useTranslation } from 'contexts/Localization'
 import CompositeImage, { CompositeImageProps } from '../CompositeImage'
 import PurpleWordHeading from '../PurpleWordHeading'
+import bg from './MAD_main.svg'
 
 interface SalesSectionButton {
   to: string
@@ -29,10 +30,10 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
   const bodyTranslatedText = t(bodyText)
 
   return (
-    <Flex flexDirection="column">
+    <Flex flexDirection="column" >
       <Flex
-        flexDirection={['column-reverse', null, null, reverse ? 'row-reverse' : 'row']}
-        alignItems={['flex-end', null, null, 'center']}
+        flexDirection={['column-reverse', reverse ? 'row-reverse' : 'row']}
+        alignItems={['center']}
         justifyContent="center"
       >
         <Flex
@@ -62,13 +63,13 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
                 </RouterLink>
               )}
             </Button>
-            {secondaryButton.external ? (
-              <Link external href={secondaryButton.to}>
-                {t(secondaryButton.text)}
-              </Link>
-            ) : (
+       
+              <Button mr="16px">
               <RouterLink to={secondaryButton.to}>{t(secondaryButton.text)}</RouterLink>
-            )}
+                 </Button> 
+
+    
+           
           </Flex>
         </Flex>
         <Flex
@@ -76,11 +77,11 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
           width={['192px', null, null, '100%']}
           flex={[null, null, null, '1']}
           mb={['24px', null, null, '0']}
-        >
-          <CompositeImage {...images} />
+        />
+       
         </Flex>
       </Flex>
-    </Flex>
+
   )
 }
 

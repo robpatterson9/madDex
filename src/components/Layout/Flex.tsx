@@ -10,6 +10,8 @@ const FlexLayout = styled.div`
     width: 100%;
     margin: 0 8px;
     margin-bottom: 32px;
+    background-image :url('./images/MAD_main.svg')
+ 
   }
 `
 

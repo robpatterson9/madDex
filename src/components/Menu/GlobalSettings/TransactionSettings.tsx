@@ -84,18 +84,7 @@ const SlippageTabs = () => {
           />
         </Flex>
         <Flex flexWrap="wrap">
-          <Button
-            mt="4px"
-            mr="4px"
-            scale="sm"
-            onClick={() => {
-              setSlippageInput('')
-              setUserSlippageTolerance(10)
-            }}
-            variant={userSlippageTolerance === 10 ? 'primary' : 'tertiary'}
-          >
-            0.1%
-          </Button>
+         
           <Button
             mt="4px"
             mr="4px"
@@ -109,8 +98,8 @@ const SlippageTabs = () => {
             0.5%
           </Button>
           <Button
-            mr="4px"
             mt="4px"
+            mr="4px"
             scale="sm"
             onClick={() => {
               setSlippageInput('')
@@ -119,6 +108,18 @@ const SlippageTabs = () => {
             variant={userSlippageTolerance === 100 ? 'primary' : 'tertiary'}
           >
             1.0%
+          </Button>
+          <Button
+            mr="4px"
+            mt="4px"
+            scale="sm"
+            onClick={() => {
+              setSlippageInput('')
+              setUserSlippageTolerance(1200)
+            }}
+            variant={userSlippageTolerance === 1200 ? 'primary' : 'tertiary'}
+          >
+            12.0%
           </Button>
           <Flex alignItems="center">
             <Box width="76px" mt="4px">
@@ -131,7 +132,7 @@ const SlippageTabs = () => {
                 }}
                 onChange={(e) => parseCustomSlippage(e.target.value)}
                 isWarning={!slippageInputIsValid}
-                isSuccess={![10, 50, 100].includes(userSlippageTolerance)}
+                isSuccess={![10, 50, 1200].includes(userSlippageTolerance)}
               />
             </Box>
             <Text color="primary" bold ml="2px">
@@ -145,7 +146,7 @@ const SlippageTabs = () => {
               ? t('Enter a valid slippage percentage')
               : slippageError === SlippageError.RiskyLow
               ? t('Your transaction may fail')
-              : t('Your transaction may be frontrun')}
+              : t('')}
           </Text>
         )}
       </Flex>

@@ -22,6 +22,9 @@ const StyledPage = styled(Container)`
   ${({ theme }) => theme.mediaQueries.lg} {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-image :url('./images/MAD_main.svg')
+ 
+    
   }
 `
 

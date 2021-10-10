@@ -1,19 +1,22 @@
 import { SalesSectionProps } from '.'
 
 export const swapSectionData: SalesSectionProps = {
-  headingText: 'Trade anything. No registration, no hassle.',
-  bodyText: 'Trade any token on Binance Smart Chain in seconds, just by connecting your wallet.',
+  headingText: 'MAD ',
+  bodyText: 'Make A Difference Token',
   reverse: false,
   primaryButton: {
-    to: '/swap',
-    text: 'Trade Now',
+    to: '/swap?outputCurrency=0xb08ba8C99A883D85D929f561B81Bb8C365A5a93b',
+    text: 'Swap BNB for MAD',
     external: false,
   },
+
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/',
-    text: 'Learn',
-    external: true,
+    to: '/swap?inputCurrency=0xb08ba8C99A883D85D929f561B81Bb8C365A5a93b',
+    
+    text: 'Swap MAD for BNB',
+    external: false,
   },
+  
   images: {
     path: '/images/home/trade/',
     attributes: [
@@ -23,6 +26,34 @@ export const swapSectionData: SalesSectionProps = {
     ],
   },
 }
+export const wapSectionData: SalesSectionProps = {
+  headingText: 'MAD ',
+  bodyText: 'Make A Difference Token',
+  reverse: false,
+  primaryButton: {
+      to: '/swap?inputCurrency=0xb08ba8C99A883D85D929f561B81Bb8C365A5a93b',
+    text: 'BUY MAD!',
+    external: false,
+  },
+
+  secondaryButton: {
+    to: '/swap?inputCurrency=0xb08ba8C99A883D85D929f561B81Bb8C365A5a93b',
+    
+    text: 'Swap MAD for BNB',
+    external: false,
+  },
+  
+  images: {
+    path: '/images/home/trade/',
+    attributes: [
+      { src: 'BNB', alt: 'BNB token' },
+      { src: 'BTC', alt: 'BTC token' },
+      { src: 'CAKE', alt: 'CAKE token' },
+    ],
+  },
+}
+
+
 
 export const earnSectionData: SalesSectionProps = {
   headingText: 'Earn passive income with crypto.',
@@ -34,7 +65,7 @@ export const earnSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/products/yield-farming',
+    to: 'https://madtoken.org',
     text: 'Learn',
     external: true,
   },
@@ -54,7 +85,7 @@ export const cakeSectionData: SalesSectionProps = {
     'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    to: '/swap?outputCurrency=0xb08ba8C99A883D85D929f561B81Bb8C365A5a93b',
     text: 'Buy CAKE',
     external: false,
   },

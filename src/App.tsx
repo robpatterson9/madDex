@@ -75,7 +75,7 @@ const App: React.FC = () => {
       <ResetCSS />
       <GlobalStyle />
       <GlobalCheckClaimStatus excludeLocations={[]} />
-      <Menu>
+      <Menu background='..//public/images/MAD_main.svg'>
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
             <Route path="/" exact>

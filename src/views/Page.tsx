@@ -13,12 +13,14 @@ const StyledPage = styled.div`
   padding-bottom: 0;
   min-height: calc(100vh - 64px);
   background: ${({ theme }) => theme.colors.gradients.bubblegum};
-  background-image :url('./images/MAD_main.svg');
+  // background-image :url('./images/MAD_main.svg');
   
   
 
   ${({ theme }) => theme.mediaQueries.xs} {
     background-size: auto;
+    // background-image :url('./images/MAD_main.svg')
+ 
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
@@ -29,6 +31,8 @@ const StyledPage = styled.div`
   ${({ theme }) => theme.mediaQueries.lg} {
     padding-top: 32px;
     min-height: calc(100vh - 64px);
+    background-image :url('./images/MAD_main.svg')
+ 
   }
 `
 
@@ -39,7 +43,7 @@ const Page: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ children, ...pro
       <StyledPage {...props}>
         {children}
         <Flex flexGrow={1} />
-        <Footer />
+        {/* <Footer /> */}
       </StyledPage>
     </>
   )

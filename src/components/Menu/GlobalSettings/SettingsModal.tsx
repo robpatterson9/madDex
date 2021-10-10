@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Text, PancakeToggle, Toggle, Flex, Modal, InjectedModalProps, ThemeSwitcher } from '@pancakeswap/uikit'
+import { Text, PancakeToggle, Toggle, Flex, Modal, InjectedModalProps } from '@pancakeswap/uikit'
 import {
   useAudioModeManager,
   useExpertModeManager,
@@ -69,8 +69,8 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
             {t('Global')}
           </Text>
           <Flex justifyContent="space-between">
-            <Text mb="24px">{t('Dark mode')}</Text>
-            <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
+            {/* <Text mb="24px">{t('Dark mode')}</Text> */}
+            {/* <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} /> */}
           </Flex>
           <GasSettings />
         </Flex>
@@ -106,15 +106,15 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
           />
         </Flex>
         <Flex justifyContent="space-between" alignItems="center">
-          <Flex alignItems="center">
+          {/* <Flex alignItems="center">
             <Text>{t('Flippy sounds')}</Text>
             <QuestionHelper
-              text={t('Fun sounds to make a truly immersive pancake-flipping trading experience')}
+              text={t('Fun sounds ')}
               placement="top-start"
               ml="4px"
             />
           </Flex>
-          <PancakeToggle checked={audioPlay} onChange={toggleSetAudioMode} scale="md" />
+          <PancakeToggle checked={audioPlay} onChange={toggleSetAudioMode} scale="md" /> */}
         </Flex>
       </ScrollableContainer>
     </Modal>

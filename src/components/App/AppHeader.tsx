@@ -18,9 +18,12 @@ interface Props {
 const AppHeaderContainer = styled(Flex)`
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
+  padding: 34px;
   width: 100%;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  border-bottom: 0px solid ${({ theme }) => theme.colors.cardBorder};
+
+ 
+  
 `
 
 const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig = false }) => {
@@ -40,7 +43,7 @@ const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig 
           </Heading>
           <Flex alignItems="center">
             {helper && <QuestionHelper text={helper} mr="4px" placement="top-start" />}
-            <Text color="textSubtle" fontSize="14px">
+            <Text color="textSubtle" fontSize="24px">
               {subtitle}
             </Text>
           </Flex>

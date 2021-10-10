@@ -16,6 +16,11 @@ const GlobalStyle = createGlobalStyle`
     background-image :url('./images/MAD_main.svg')
  
   }
+body {
+    background-image :url('./images/MAD_main.svg')
+ 
+
+  }
     img {
       height: auto;
       max-width: 100%;

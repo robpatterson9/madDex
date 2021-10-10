@@ -37,10 +37,13 @@ const BubbleWrapper = styled(Flex)`
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <Wrapper>
-<h1> MAD ! </h1>
-    </Wrapper>
+  <>
+  </>
+
+  
   )
+
+
 }
 
 export default Footer

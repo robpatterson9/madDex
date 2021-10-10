@@ -106,16 +106,14 @@ const Hero = () => {
         id="homepage-hero"
       >
         <Flex flex="1" flexDirection="column">
-          <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
-          </Heading>
+     
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Enter the MAD Token d-Exchange now')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
             <Link to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+              <Button variant={!account ? 'secondary' : 'primary'}>{t('Enter')}</Button>
             </Link>
           </Flex>
         </Flex>
@@ -126,9 +124,7 @@ const Hero = () => {
           mb={['24px', null, null, '0']}
           position="relative"
         >
-          <BunnyWrapper>
-            <img src={`${imagePath}${imageSrc}.png`} srcSet={getSrcSet(imagePath, imageSrc)} alt={t('Lunar bunny')} />
-          </BunnyWrapper>
+      
           <StarsWrapper>
             <CompositeImage {...starsImage} />
           </StarsWrapper>
