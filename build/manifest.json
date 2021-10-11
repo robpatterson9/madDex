@@ -2,7 +2,7 @@
   "short_name": "MadDex",
   "name": "Mad Token Dex",
   "description": "Swap Mad for ? !",
-  "homepage_url": "https://madtoken.org",
+  "homepage_url": "https://dex.madtoken.org",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

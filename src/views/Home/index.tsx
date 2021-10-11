@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React from 'react'
 import styled from 'styled-components'
 import PageSection from 'components/PageSection'
@@ -42,12 +43,12 @@ const Home: React.FC = () => {
   const { theme } = useTheme()
   const { account } = useWeb3React()
 
-  const HomeSectionContainerStyles = { background: '#ffffff',    margin: '0', width: '50%', maxWidth: '968px', marginBottom: '1300px' }
+  const HomeSectionContainerStyles = { background: '#ffffff', margin: '0', width: '50%', maxWidth: '968px', marginBottom: '1300px' }
 
   return (
     <>
-      
-      
+
+
       {/* <PageSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
@@ -65,21 +66,39 @@ const Home: React.FC = () => {
         // background={theme.colors.background}
         index={2}
         hasCurvedDivider={false}
-        background="./MAD_main.svg"
+        background="./MAD_main.svg"  >
 
-      >
 
-       
-           
-     
-        <SalesSection 
-  
-        
-        
-        {...swapSectionData} />
+        <SalesSection
+
+
+
+          {...swapSectionData} />
+        <div>
+
+          <br /><br />
+          <br />
+
+          <iframe
+            src="https://widget.onramper.com??defaultCrypto=BNB&color=FF1100&apiKey=pk_prod_EMEhKOXNuUfrHnqu9Xg2w3hUVBPuurn8sHoPYvbbf4s0"
+            height="595px"
+            width="540px"
+
+            title="Onramper widget"
+            frameBorder="0"
+            allow="accelerometer;
+ autoplay; camera; gyroscope; payment"
+
+          >
+            <a href="https://widget.onramper.com" target="_blank" rel="noreferrer">Buy crypto</a>
+          </iframe>
+
+        </div>
+
+
       </PageSection>
-     
-    
+
+
     </>
   )
 }
