@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/style-prop-object */
 import React from 'react'
 import styled from 'styled-components'
@@ -75,7 +76,7 @@ const Home: React.FC = () => {
           <br />
 
           <iframe
-            src="https://widget.onramper.com??defaultCrypto=BNB&color=FF1100&apiKey=pk_prod_EMEhKOXNuUfrHnqu9Xg2w3hUVBPuurn8sHoPYvbbf4s0"
+            src="https://widget.onramper.com?defaultCrypto=BNB&color=FF1100&apiKey=pk_prod_EMEhKOXNuUfrHnqu9Xg2w3hUVBPuurn8sHoPYvbbf4s0"
             height="595px"
             width="540px"
             title="Onramper widget"
