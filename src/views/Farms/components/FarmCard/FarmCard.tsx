@@ -22,17 +22,19 @@ export interface FarmWithStakedValue extends DeserializedFarm {
 
 const StyledCard = styled(Card)`
   align-self: baseline;
+  background: #000000;
+
 `
 
 const FarmCardInnerContainer = styled(Flex)`
   flex-direction: column;
   justify-content: space-around;
-  padding: 24px;
+  padding: 44px;
 `
 
 const ExpandingWrapper = styled.div`
   padding: 24px;
-  border-top: 2px solid ${({ theme }) => theme.colors.cardBorder};
+  border-top: 6px solid ${({ theme }) => theme.colors.cardBorder};
   overflow: hidden;
 `
 
@@ -55,7 +57,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
       : ''
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : t('CAKE + Fees')
+  const earnLabel = farm.dual ? farm.dual.earnLabel : t('Heart + Fees')
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
     quoteTokenAddress: farm.quoteToken.address,
