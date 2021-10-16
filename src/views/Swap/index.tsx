@@ -495,6 +495,21 @@ export default function Swap({ history }: RouteComponentProps) {
       ) : (
         <UnsupportedCurrencyFooter currencies={[currencies.INPUT, currencies.OUTPUT]} />
       )}
+       <div className= "Iframe">
+ <iframe
+            src="https://widget.onramper.com?defaultCrypto=BNB&color=FF1100&apiKey=pk_prod_EMEhKOXNuUfrHnqu9Xg2w3hUVBPuurn8sHoPYvbbf4s0"
+            height="595px"
+            width="540px"
+            title="Onramper widget"
+            frameBorder="0"
+            allow="accelerometer; autoplay; camera; gyroscope; payment"
+          >
+            <a href="https://widget.onramper.com" target="_blank" rel="noreferrer">
+              Buy crypto
+            </a>
+          </iframe>
+    </div>
+    
     </Page>
   )
 }

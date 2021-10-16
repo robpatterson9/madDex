@@ -21,6 +21,21 @@ body {
  
 
   }
+  .Iframe {
+    padding: 6px;
+
+    border: 2px solid #ff1100;
+
+    border-radius: 20px;
+    background: #ff1100;
+  }
+
+#Flex {
+     border: 2px solid;
+
+   
+   }
+
     img {
       height: auto;
       max-width: 100%;
