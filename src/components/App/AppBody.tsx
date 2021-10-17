@@ -4,10 +4,12 @@ import { Card } from '@pancakeswap/uikit'
 
 export const BodyWrapper = styled(Card)`
   border-radius: 24px;
-  max-width: 436px;
+  border: 4px solid #ff1100;
+
+  max-width: 475px;
   width: 100%;
-  z-index: 1;
-  background-image :url('./images/MAD_main.svg')
+
+  background-image :url('./images/MAD_main.svg') 
  
   
 `

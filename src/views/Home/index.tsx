@@ -42,6 +42,7 @@ const Home: React.FC = () => {
 
   const HomeSectionContainerStyles = {
     background: '#ffffff',
+
     margin: '0',
     width: '50%',
     maxWidth: '968px',
@@ -64,10 +65,13 @@ const Home: React.FC = () => {
       </PageSection> */}
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        // background={theme.colors.background}
+        background={theme.colors.background}
+        // background="./MAD_main.svg"
+
         index={2}
         hasCurvedDivider={false}
-        background="./MAD_main.svg"
+    
+
       >
         <SalesSection {...swapSectionData} />
         <div>

@@ -14,13 +14,21 @@ const GlobalStyle = createGlobalStyle`
   }
   page {
     background-image :url('./images/MAD_main.svg')
- 
+
+
   }
+  
 body {
-    background-image :url('./images/MAD_main.svg')
+    background-image :url('./images/MAD_main.svg') 
+  
+
+
+
  
 
   }
+
+
   .Iframe {
     padding: 6px;
 
@@ -32,8 +40,6 @@ body {
 
 #Flex {
      border: 2px solid;
-
-   
    }
 
     img {
